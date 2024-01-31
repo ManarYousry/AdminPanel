@@ -1,0 +1,61 @@
+
+<!--  ------main----------------- -->
+<mat-card class="example-card" style="padding-bottom: 30px !important;">
+    <div class="caption"><span>Evaluator Statistics</span></div>
+    <div class="search-div mt-5" fxLayout="row">
+           
+        <button mat-button class="new" (click)="onCreate()">
+            <mat-icon>add</mat-icon> New Engineer
+        </button>
+    </div>
+    <div class="shadow py-5 px-4 ">
+        
+        <mat-grid-list cols="2" rowHeight="200px">
+            <mat-grid-tile>
+              <div class="controles-container">
+                
+                <mat-form-field appearance="outline">
+                    <mat-label>Select Month</mat-label>
+                  <input  matInput>
+                  <mat-error>This field is mandatory.</mat-error> 
+                </mat-form-field>
+               
+              </div>
+            </mat-grid-tile>
+            <mat-grid-tile>
+              <div class="controles-container">
+                <mat-form-field appearance="outline">
+                    <mat-label>Select Type</mat-label>
+                  <input matInput>
+                  <mat-error>This field is mandatory.</mat-error> 
+                </mat-form-field>
+               
+                
+                
+               
+              </div>
+            </mat-grid-tile>
+            
+          </mat-grid-list>
+      
+        
+          <button mat-raised-button class="float-right mt-2 w-25" color="warn">Submit</button>
+         
+        
+    </div>
+   
+    <mat-card class="example-card mx-0 " style="padding:0 0  20px 0 !important;">
+        <mat-card-header>
+            <mat-card-title>
+             Evaluator Statistics
+            </mat-card-title>
+        </mat-card-header>
+        <mat-divider class="my-1"></mat-divider>
+        
+    
+   
+        </mat-card>
+</mat-card>
+
+
+

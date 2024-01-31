@@ -1,0 +1,727 @@
+<!--  ------main----------------- -->
+<mat-card class="example-card" style="padding-bottom: 30px !important;">
+  <div class="caption"><span>ReEvaluation </span></div>
+  <div class="mt-5">
+    <mat-accordion>
+      <mat-expansion-panel expanded="0" opened="true" hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <mat-icon class="mr-3">engineering</mat-icon> Engineer Details
+
+          </mat-panel-title>
+
+        </mat-expansion-panel-header>
+        <mat-grid-list cols="2" rowHeight="500px">
+          <mat-grid-tile>
+
+            <div class="controles-container">
+              <mat-form-field appearance="outline">
+                <mat-label>Serial</mat-label>
+                <input matInput>
+              </mat-form-field>
+
+
+              <mat-form-field appearance="outline">
+                <mat-label>Eng.Name</mat-label>
+                <input matInput>
+              </mat-form-field>
+              <mat-form-field appearance="outline">
+                <mat-label>Supervisor</mat-label>
+                <input matInput>
+              </mat-form-field>
+
+
+              <mat-form-field appearance="outline">
+                <mat-label>ID</mat-label>
+                <input matInput>
+              </mat-form-field>
+            </div>
+          </mat-grid-tile>
+          <mat-grid-tile>
+
+            <div class="controles-container">
+              <mat-form-field appearance="outline">
+                <mat-label>Department</mat-label>
+                <input matInput>
+              </mat-form-field>
+              <mat-form-field appearance="outline">
+                <mat-label>Title</mat-label>
+                <input matInput>
+              </mat-form-field>
+              <mat-form-field appearance="outline">
+                <mat-label>Section</mat-label>
+                <input matInput>
+              </mat-form-field>
+
+            </div>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </mat-expansion-panel>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <mat-icon class="mr-3">supervisor_account</mat-icon>
+            Customer Details
+
+          </mat-panel-title>
+
+        </mat-expansion-panel-header>
+        <mat-grid-list cols="2" rowHeight="500px">
+          <mat-grid-tile>
+
+            <div class="controles-container">
+              <mat-form-field appearance="outline">
+                <mat-label>Cust.Name</mat-label>
+                <input matInput>
+              </mat-form-field>
+              <mat-form-field appearance="outline">
+                <mat-label>Contact Name</mat-label>
+                <input matInput>
+              </mat-form-field>
+              <mat-form-field appearance="outline">
+                <mat-label>Login</mat-label>
+                <input matInput>
+              </mat-form-field>
+              <mat-form-field appearance="outline">
+                <mat-label> Ticket ID</mat-label>
+                <input matInput>
+              </mat-form-field>
+              <mat-form-field appearance="outline">
+                <mat-label>Transaction unvid</mat-label>
+                <input matInput>
+              </mat-form-field>
+
+            </div>
+          </mat-grid-tile>
+
+          <mat-grid-tile>
+
+            <div class="controles-container">
+
+              <mat-form-field appearance="outline">
+                <mat-label>Call Date</mat-label>
+                <input matInput>
+              </mat-form-field>
+              <mat-form-field appearance="outline">
+                <mat-label>Call Time</mat-label>
+                <input matInput>
+              </mat-form-field>
+              <mat-form-field appearance="outline">
+                <mat-label>Call Duration</mat-label>
+                <input matInput>
+              </mat-form-field>
+              <mat-form-field appearance="outline">
+                <mat-label>Monitoring Type</mat-label>
+                <input matInput>
+              </mat-form-field>
+              <mat-form-field appearance="outline">
+                <mat-label>Monitoring Rep</mat-label>
+                <input matInput>
+              </mat-form-field>
+
+            </div>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </mat-expansion-panel>
+
+
+    </mat-accordion>
+  </div>
+
+  <mat-card class="example-card mx-0 " style="padding:0 0  20px 0 !important;">
+    <mat-card-header>
+      <mat-card-title>
+        Transaction
+      </mat-card-title>
+    </mat-card-header>
+    <mat-divider class=""></mat-divider>
+
+
+
+
+    <div class="row mt-5">
+      <!-- -------------stepper--------------------------- -->
+      <div class="col-12">
+        <mat-vertical-stepper>
+          <mat-step>
+            <ng-template matStepLabel>Opening</ng-template>
+            <mat-grid-list cols="2" rowHeight="170px">
+              <mat-grid-tile>
+
+                <div class="controles-container">
+                  <mat-label class="question">Uses appropriate welcome : </mat-label>
+                  <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="1">Yes</mat-radio-button>
+                    <mat-radio-button value="0">No</mat-radio-button>
+                  </mat-radio-group>
+                  <mat-form-field appearance="outline">
+                    <mat-label>Comment</mat-label>
+                    <textarea matInput placeholder="Write your comment here..">
+                        </textarea>
+
+                  </mat-form-field>
+                </div>
+              </mat-grid-tile>
+              <mat-grid-tile>
+                <div class="controles-container">
+                  <mat-label class="question">Pre-call preparation :</mat-label>
+                  <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="1">Yes</mat-radio-button>
+                    <mat-radio-button value="0">No</mat-radio-button>
+                  </mat-radio-group>
+                  <mat-form-field appearance="outline">
+                    <mat-label>Comment</mat-label>
+                    <textarea matInput placeholder="Write your comment here..">
+                          </textarea>
+
+                  </mat-form-field>
+                </div>
+              </mat-grid-tile>
+            </mat-grid-list>
+            <div class="pl-4">
+              <button mat-raised-button matStepperNext color="warn">Next</button>
+            </div>
+          </mat-step>
+          <mat-step>
+            <ng-template matStepLabel>Customer Data and Verification</ng-template>
+            <mat-grid-list cols="2" rowHeight="170px">
+              <mat-grid-tile>
+
+                <div class="controles-container">
+                  <mat-label class="question">Professional verification : </mat-label>
+                  <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="1">Yes</mat-radio-button>
+                    <mat-radio-button value="0">No</mat-radio-button>
+                  </mat-radio-group>
+                  <mat-form-field appearance="outline">
+                    <mat-label>Comment</mat-label>
+                    <textarea matInput placeholder="Write your comment here..">
+                    </textarea>
+
+                  </mat-form-field>
+                 
+                
+                </div>
+              </mat-grid-tile>
+              <mat-grid-tile>
+                <div class="controles-container">
+                  <mat-label class="question">Confirming TT number with customer (Outbound call, follow up call,Mails ):</mat-label>
+                  <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="1">Yes</mat-radio-button>
+                    <mat-radio-button value="0">No</mat-radio-button>
+                  </mat-radio-group>
+                  <mat-form-field appearance="outline">
+                    <mat-label>Comment</mat-label>
+                    <textarea matInput placeholder="Write your comment here..">
+                      </textarea>
+
+                  </mat-form-field>
+                  
+                </div>
+              </mat-grid-tile>
+              
+            
+              
+            </mat-grid-list>
+            <div class="pl-4">
+              <button mat-button matStepperPrevious>Back</button>
+              <button mat-raised-button matStepperNext color="warn">Next</button>
+            </div>
+          </mat-step>
+         
+      
+         
+          <mat-step>
+            <ng-template matStepLabel>Information logging</ng-template>
+            <mat-grid-list cols="2" rowHeight="500px">
+              <mat-grid-tile>
+
+                <div class="controles-container">
+                  <mat-label class="question">Logging customer complain in ticketing system : </mat-label>
+                  <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="1">Yes</mat-radio-button>
+                    <mat-radio-button value="0">No</mat-radio-button>
+                  </mat-radio-group>
+                  <mat-form-field appearance="outline">
+                    <mat-label>Comment</mat-label>
+                    <textarea matInput placeholder="Write your comment here..">
+                    </textarea>
+
+                  </mat-form-field>
+                  <mat-label class="question">Logging customer info in ticketing system (Contact number & Contact person name) :</mat-label>
+                  <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="1">Yes</mat-radio-button>
+                    <mat-radio-button value="0">No</mat-radio-button>
+                  </mat-radio-group>
+                  <mat-form-field appearance="outline">
+                    <mat-label>Comment</mat-label>
+                    <textarea matInput placeholder="Write your comment here..">
+                      </textarea>
+
+                  </mat-form-field>
+                  <mat-label class="question">Logging all technical info and troubleshooting done regarding customer case in ticketing system :</mat-label>
+                  <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="1">Yes</mat-radio-button>
+                    <mat-radio-button value="0">No</mat-radio-button>
+                  </mat-radio-group>
+                  <mat-form-field appearance="outline">
+                    <mat-label>Comment</mat-label>
+                    <textarea matInput placeholder="Write your comment here..">
+                      </textarea>
+
+                  </mat-form-field>
+                </div>
+              </mat-grid-tile>
+              <mat-grid-tile>
+                <div class="controles-container">
+                  <mat-label class="question">logging ticket confirmation info :</mat-label>
+                  <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="1">Yes</mat-radio-button>
+                    <mat-radio-button value="0">No</mat-radio-button>
+                  </mat-radio-group>
+                  <mat-form-field appearance="outline">
+                    <mat-label>Comment</mat-label>
+                    <textarea matInput placeholder="Write your comment here..">
+                      </textarea>
+
+                  </mat-form-field>
+                  <mat-label class="question">Logging customer follow up info :</mat-label>
+                  <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="1">Yes</mat-radio-button>
+                    <mat-radio-button value="0">No</mat-radio-button>
+                  </mat-radio-group>
+                  <mat-form-field appearance="outline">
+                    <mat-label>Comment</mat-label>
+                    <textarea matInput placeholder="Write your comment here..">
+                      </textarea>
+
+                  </mat-form-field>
+                </div>
+              </mat-grid-tile>
+              
+            
+              
+            </mat-grid-list>
+            <div class="pl-4">
+              <button mat-button matStepperPrevious>Back</button>
+              <button mat-raised-button matStepperNext color="warn">Next</button>
+            </div>
+          </mat-step>
+          <mat-step>
+            <ng-template matStepLabel>Knowledge and troubleshooting Accuracy</ng-template>
+            <mat-grid-list cols="2" rowHeight="500px">
+              <mat-grid-tile>
+
+                <div class="controles-container">
+                  <mat-label class="question">Is the agent knowledgeable and technically aware of customer issue: </mat-label>
+                  <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="1">Yes</mat-radio-button>
+                    <mat-radio-button value="0">No</mat-radio-button>
+                  </mat-radio-group>
+                  <mat-form-field appearance="outline">
+                    <mat-label>Comment</mat-label>
+                    <textarea matInput placeholder="Write your comment here..">
+                    </textarea>
+
+                  </mat-form-field>
+                  <mat-label class="question">Gives clear, specific and correct instructions without giving any wrong or Misleading info: </mat-label>
+                  <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="1">Yes</mat-radio-button>
+                    <mat-radio-button value="0">No</mat-radio-button>
+                  </mat-radio-group>
+                  <mat-form-field appearance="outline">
+                    <mat-label>Comment</mat-label>
+                    <textarea matInput placeholder="Write your comment here..">
+                    </textarea>
+
+                  </mat-form-field>
+                </div>
+              </mat-grid-tile>
+              <mat-grid-tile>
+                <div class="controles-container">
+                  <mat-label class="question">Using effective and appropriate troubleshooting:</mat-label>
+                  <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="1">Yes</mat-radio-button>
+                    <mat-radio-button value="0">No</mat-radio-button>
+                  </mat-radio-group>
+                  <mat-form-field appearance="outline">
+                    <mat-label>Comment</mat-label>
+                    <textarea matInput placeholder="Write your comment here..">
+                      </textarea>
+
+                  </mat-form-field>
+                </div>
+              </mat-grid-tile>
+            </mat-grid-list>
+            <div class="pl-4">
+              <button mat-button matStepperPrevious>Back</button>
+              <button mat-raised-button matStepperNext color="warn">Next</button>
+            </div>
+          </mat-step>
+          <mat-step>
+            <ng-template matStepLabel>LISTENING SKILLS</ng-template>
+            <mat-grid-list cols="2" rowHeight="500px">
+              <mat-grid-tile>
+
+                <div class="controles-container">
+                  <mat-label class="question">(Focus on call) Do not conduct business or side conversation unrelated to the current customer : </mat-label>
+                  <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="1">Yes</mat-radio-button>
+                    <mat-radio-button value="0">No</mat-radio-button>
+                  </mat-radio-group>
+                  <mat-form-field appearance="outline">
+                    <mat-label>Comment</mat-label>
+                    <textarea matInput placeholder="Write your comment here..">
+                    </textarea>
+
+                  </mat-form-field>
+                  <mat-label class="question">(Focus on call) Do not eat,drink or make unnecessary noise during conversation,do not repeat your questions : </mat-label>
+                  <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="1">Yes</mat-radio-button>
+                    <mat-radio-button value="0">No</mat-radio-button>
+                  </mat-radio-group>
+                  <mat-form-field appearance="outline">
+                    <mat-label>Comment</mat-label>
+                    <textarea matInput placeholder="Write your comment here..">
+                    </textarea>
+
+                  </mat-form-field>
+                </div>
+              </mat-grid-tile>
+              <mat-grid-tile>
+                <div class="controles-container">
+                  <mat-label class="question">(Interruption) Let the customer finish comments before responding ,do not pre-determine what the customer will say:</mat-label>
+                  <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="1">Yes</mat-radio-button>
+                    <mat-radio-button value="0">No</mat-radio-button>
+                  </mat-radio-group>
+                  <mat-form-field appearance="outline">
+                    <mat-label>Comment</mat-label>
+                    <textarea matInput placeholder="Write your comment here..">
+                      </textarea>
+
+                  </mat-form-field>
+                </div>
+              </mat-grid-tile>
+            </mat-grid-list>
+            <div class="pl-4">
+              <button mat-button matStepperPrevious>Back</button>
+              <button mat-raised-button matStepperNext color="warn">Next</button>
+            </div>
+          </mat-step>
+          <mat-step>
+            <ng-template matStepLabel>Speaking skills</ng-template>
+            <mat-grid-list cols="2" rowHeight="500px">
+              <mat-grid-tile>
+
+                <div class="controles-container">
+                  <mat-label class="question">Controlled the call & appropriate call length : </mat-label>
+                  <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="1">Yes</mat-radio-button>
+                    <mat-radio-button value="0">No</mat-radio-button>
+                  </mat-radio-group>
+                  <mat-form-field appearance="outline">
+                    <mat-label>Comment</mat-label>
+                    <textarea matInput placeholder="Write your comment here..">
+                    </textarea>
+
+                  </mat-form-field>
+                  <mat-label class="question">Speaks Clearly and Audibly ( Clear, tone, speed): </mat-label>
+                  <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="1">Yes</mat-radio-button>
+                    <mat-radio-button value="0">No</mat-radio-button>
+                  </mat-radio-group>
+                  <mat-form-field appearance="outline">
+                    <mat-label>Comment</mat-label>
+                    <textarea matInput placeholder="Write your comment here..">
+                    </textarea>
+
+                  </mat-form-field>
+                  <mat-label class="question">Follows the correct hold/transfer ( protocols ): </mat-label>
+                  <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="1">Yes</mat-radio-button>
+                    <mat-radio-button value="0">No</mat-radio-button>
+                  </mat-radio-group>
+                  <mat-form-field appearance="outline">
+                    <mat-label>Comment</mat-label>
+                    <textarea matInput placeholder="Write your comment here..">
+                    </textarea>
+
+                  </mat-form-field>
+                </div>
+              </mat-grid-tile>
+              <mat-grid-tile>
+                <div class="controles-container">
+                  <mat-label class="question">Used good word structure, avoids slang:</mat-label>
+                  <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="1">Yes</mat-radio-button>
+                    <mat-radio-button value="0">No</mat-radio-button>
+                  </mat-radio-group>
+                  <mat-form-field appearance="outline">
+                    <mat-label>Comment</mat-label>
+                    <textarea matInput placeholder="Write your comment here..">
+                      </textarea>
+
+                  </mat-form-field>
+                  <mat-label class="question">Used customer's name:</mat-label>
+                  <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="1">Yes</mat-radio-button>
+                    <mat-radio-button value="0">No</mat-radio-button>
+                  </mat-radio-group>
+                  <mat-form-field appearance="outline">
+                    <mat-label>Comment</mat-label>
+                    <textarea matInput placeholder="Write your comment here..">
+                      </textarea>
+
+                  </mat-form-field>
+                </div>
+              </mat-grid-tile>
+            </mat-grid-list>
+            <div class="pl-4">
+              <button mat-button matStepperPrevious>Back</button>
+              <button mat-raised-button matStepperNext color="warn">Next</button>
+            </div>
+          </mat-step>
+          <mat-step>
+            <ng-template matStepLabel>Exhibts Responsiveness toward the customer</ng-template>
+            <mat-grid-list cols="2" rowHeight="500px">
+              <mat-grid-tile>
+
+                <div class="controles-container">
+                  <mat-label class="question">Acknowledges all relevant customer comments in a timely manner. (I.e. 3 to 5 seconds): </mat-label>
+                  <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="1">Yes</mat-radio-button>
+                    <mat-radio-button value="0">No</mat-radio-button>
+                  </mat-radio-group>
+                  <mat-form-field appearance="outline">
+                    <mat-label>Comment</mat-label>
+                    <textarea matInput placeholder="Write your comment here..">
+                    </textarea>
+
+                  </mat-form-field>
+                  <mat-label class="question">Dead air time should be minimal: </mat-label>
+                  <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="1">Yes</mat-radio-button>
+                    <mat-radio-button value="0">No</mat-radio-button>
+                  </mat-radio-group>
+                  <mat-form-field appearance="outline">
+                    <mat-label>Comment</mat-label>
+                    <textarea matInput placeholder="Write your comment here..">
+                    </textarea>
+
+                  </mat-form-field>
+                </div>
+              </mat-grid-tile>
+              <mat-grid-tile>
+                <div class="controles-container">
+                  <mat-label class="question">speaks courteously and enthusiastically to address customer's feelings:</mat-label>
+                  <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="1">Yes</mat-radio-button>
+                    <mat-radio-button value="0">No</mat-radio-button>
+                  </mat-radio-group>
+                  <mat-form-field appearance="outline">
+                    <mat-label>Comment</mat-label>
+                    <textarea matInput placeholder="Write your comment here..">
+                      </textarea>
+
+                  </mat-form-field>
+                  <mat-label class="question">Does not use patronizing sarcastic comments or to address blame to customers:</mat-label>
+                  <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="1">Yes</mat-radio-button>
+                    <mat-radio-button value="0">No</mat-radio-button>
+                  </mat-radio-group>
+                  <mat-form-field appearance="outline">
+                    <mat-label>Comment</mat-label>
+                    <textarea matInput placeholder="Write your comment here..">
+                      </textarea>
+
+                  </mat-form-field>
+                </div>
+              </mat-grid-tile>
+            </mat-grid-list>
+            <div class="pl-4">
+              <button mat-button matStepperPrevious>Back</button>
+              <button mat-raised-button matStepperNext color="warn">Next</button>
+            </div>
+          </mat-step>
+          <mat-step>
+            <ng-template matStepLabel>Closing</ng-template>
+            <mat-grid-list cols="2" rowHeight="500px">
+              <mat-grid-tile>
+
+                <div class="controles-container">
+                  <mat-label class="question">Reiterates Action Plan: </mat-label>
+                  <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="1">Yes</mat-radio-button>
+                    <mat-radio-button value="0">No</mat-radio-button>
+                  </mat-radio-group>
+                  <mat-form-field appearance="outline">
+                    <mat-label>Comment</mat-label>
+                    <textarea matInput placeholder="Write your comment here..">
+                    </textarea>
+
+                  </mat-form-field>
+                  <mat-label class="question">set the expectation for follow up and next contact: </mat-label>
+                  <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="1">Yes</mat-radio-button>
+                    <mat-radio-button value="0">No</mat-radio-button>
+                  </mat-radio-group>
+                  <mat-form-field appearance="outline">
+                    <mat-label>Comment</mat-label>
+                    <textarea matInput placeholder="Write your comment here..">
+                    </textarea>
+
+                  </mat-form-field>
+                </div>
+              </mat-grid-tile>
+              <mat-grid-tile>
+                <div class="controles-container">
+                  <mat-label class="question">Ask the customer if they have anything more to add or he has any other problem:</mat-label>
+                  <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="1">Yes</mat-radio-button>
+                    <mat-radio-button value="0">No</mat-radio-button>
+                  </mat-radio-group>
+                  <mat-form-field appearance="outline">
+                    <mat-label>Comment</mat-label>
+                    <textarea matInput placeholder="Write your comment here..">
+                      </textarea>
+
+                  </mat-form-field>
+                  <mat-label class="question">Closes with a professional statement:</mat-label>
+                  <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="1">Yes</mat-radio-button>
+                    <mat-radio-button value="0">No</mat-radio-button>
+                  </mat-radio-group>
+                  <mat-form-field appearance="outline">
+                    <mat-label>Comment</mat-label>
+                    <textarea matInput placeholder="Write your comment here..">
+                      </textarea>
+
+                  </mat-form-field>
+                </div>
+              </mat-grid-tile>
+            </mat-grid-list>
+            <div class="pl-4">
+              <button mat-button matStepperPrevious>Back</button>
+              <button mat-raised-button matStepperNext color="warn">Next</button>
+            </div>
+          </mat-step>
+          <mat-step>
+            <ng-template matStepLabel>Done</ng-template>
+             <mat-grid-list cols="2" rowHeight="300px">
+              <mat-grid-tile>
+
+                <div class="controles-container pl-0">
+            <div class="critical-comment m-3 " style="position: relative;">
+              <div class="captionComment"><span>Total Result</span></div>
+              <div class="shadow py-5 px-4 ">
+    
+                <table class="w-100 mt-4 mb-4  table table-striped  table-sm">
+                  <tr>
+                    <th>Transaction results</th>
+                    <td> pass </td>
+                  </tr>
+                  <tr>
+                    <th> % of Non-Fatal accuracy </th>
+                    <td> 88 </td>
+                  </tr>
+                  <tr>
+                    <th> % of Fatal accuracy </th>
+                    <td> 100</td>
+                  </tr>
+    
+                </table>
+    
+    
+    
+    
+              </div>
+    
+            </div>
+            </div>
+            </mat-grid-tile>
+            <mat-grid-tile>
+
+              <div class="controles-container">
+                <div class="critical-comment m-3 " style="position: relative;">
+                  <div class="captionComment"><span>Critical Comment </span></div>
+                  <div class="shadow py-5 px-4 ">
+        
+                    <mat-form-field class="w-100 mt-2 mb-5" appearance="outline">
+                      <mat-label>Comment</mat-label>
+                      <textarea matInput placeholder="Type your comment Here..." rows="7"></textarea>
+                    </mat-form-field>
+        
+                  </div>
+        
+                </div>
+             
+             
+                </div>
+                </mat-grid-tile>
+                </mat-grid-list>
+               
+            <div>
+              <button mat-button matStepperPrevious>Back</button>
+              <button mat-raised-button class="float-right mt-2 w-25" color="warn">Submit</button>
+            </div>
+          </mat-step>
+        </mat-vertical-stepper>
+
+      </div>
+
+
+
+
+<!-- 
+      <div class="col-6">
+        <div class="critical-comment m-3 " style="position: relative;">
+          <div class="captionComment"><span>Total Result</span></div>
+          <div class="shadow pt-5 pb-2 px-4 ">
+
+            <table class="w-100 mt-3  table table-striped  table-sm">
+              <tr>
+                <th>Transaction results</th>
+                <td> pass </td>
+              </tr>
+              <tr>
+                <th> % of Non-Fatal accuracy </th>
+                <td> 88 </td>
+              </tr>
+              <tr>
+                <th> % of Fatal accuracy </th>
+                <td> 100</td>
+              </tr>
+
+            </table>
+
+
+
+
+          </div>
+
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="critical-comment m-3 " style="position: relative;">
+          <div class="captionComment"><span>Critical Comment </span></div>
+          <div class="shadow py-5 px-4 ">
+
+            <mat-form-field class="w-100 mt-2 mb-5" appearance="outline">
+              <mat-label>Comment</mat-label>
+              <textarea matInput placeholder="Type your comment Here..." rows="7"></textarea>
+            </mat-form-field>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="col-12 text-right pr-4">
+        <button mat-raised-button class=" mt-2 w-25" color="warn">Submit</button>
+      </div> -->
+
+    </div>
+
+
+  </mat-card>
+</mat-card>
