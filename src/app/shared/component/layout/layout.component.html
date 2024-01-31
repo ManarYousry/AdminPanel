@@ -1,12 +1,12 @@
 <app-header (sidenavToggle)="onToolbarMenuToggle()"></app-header>
 <mat-sidenav-container>
-    <mat-sidenav mode="side" #sidenav id="sidenav" [class.menu-open]="isMenuOpen" [class.menu-close]="!isMenuOpen" opened>
-        <app-sidebar></app-sidebar>
-        
-    </mat-sidenav>
-    <mat-sidenav-content #side  [ngStyle]="{ 'margin-left.px': contentMargin }">
-       
-        <main #main>  
+    <!-- <mat-sidenav mode="side" #sidenav id="sidenav" [class.menu-open]="isMenuOpen" [class.menu-close]="!isMenuOpen" opened>
+
+
+    </mat-sidenav> -->
+    <mat-sidenav-content #side>
+
+        <main #main>
 
             <router-outlet>
             </router-outlet>
